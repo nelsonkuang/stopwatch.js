@@ -3,7 +3,7 @@ A simple stopwatch by plain JavaScript. 一个简单的纯js实现的秒表
 效果如下：   
 **00 : 02 : 34 : 40**
 
-### Javascript:
+### How to use it?
 
 ```
 // initialization 初始化
