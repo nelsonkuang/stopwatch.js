@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">   
+    <title>纯js实现秒表效果插件 - stopwatch.js</title> 
+    <meta content="纯js实现秒表效果插件" name="description">
+    <meta content="纯js秒表插件,秒表,stopwatch.js" name="keywords">
+    <style>
+        #container {
+            font-size: 48px;
+            font-family: arial;
+            font-weight: bold;
+            background-color: blue;
+            color: orange;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="display: none;">纯js实现秒表效果插件 - stopwatch, demo如下：</h1>
+    <div id="container">
+    </div>
+    <footer id="footer" style="text-align:center;font-size:12px;padding:50px 0;">
+        <div class="outer">
+            <div id="footer-info">
+                <div class="footer-left">
+                    <a target="_blank" href="http://www.iampua.com/pui/">返回 PUI 首页</a> | <a target="_blank" href="http://www.iampua.com/">泡学达人</a> | <a target="_blank" href="mailto:kbl_1794@qq.com">联系我们</a>
+                    <br>
+                    <br>
+                    Copyright © 2015-<span id="year_today">2017</span> iampua.com | <a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备13012994号-1</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+   <script type="text/javascript" src="stopwatch.js"></script>
+    <script>
+// initialization 初始化
+var sw = new stopwatch({
+    el: '#container', // element,  default value is '.stopwatch'.
+    startTime: 0, // start time by Second, default value is 0.
+    displayTpl: '{hour} : {minute} : {second} : {millisecond}' // display template
+});
+    </script>
+    <script>
+    document.getElementById('year_today').innerHTML = (new Date()).getFullYear(); var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3f796b398b088d897a22e0e437ee603e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+</body>
+</html>
