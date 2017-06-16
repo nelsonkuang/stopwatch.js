@@ -27,9 +27,9 @@
      */
     var stopwatch = function (options) {
         var defaults = {
-            el: '.stopwatch', // 元素
-            startTime: 0, // 要倒计时的时间，秒为单位
-            displayTpl: '{hour} : {minute} : {second} : {millisecond}' // 显示模版
+            el: '.stopwatch', // element,  default value is 'stopwatch'.
+            startTime: 0, // start time by Second, default value is 0.
+            displayTpl: '{hour} : {minute} : {second} : {millisecond}' // display template
         };
         options = this.extend(defaults, options);
         this.name = 'stopwatch';
